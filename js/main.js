@@ -12,10 +12,11 @@ function manipulaDados(operacao) {
   }
 }
 
-controle.forEach((elemento) => {
+controle.forEach(elemento => {
   elemento.addEventListener('click', () => {
     manipulaDados(elemento.target.textContent);
   });
+});
 
 robotron.addEventListener('click', () => {
   console.log('Não encoste! A lataria é nova!');
